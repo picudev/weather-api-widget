@@ -1,12 +1,3 @@
-=== Weather API Widget ===
-Contributors: developer
-Tags: weather, api, widget, shortcode, openweathermap
-Requires at least: 5.0
-Tested up to: 6.5
-Stable tag: 1.1.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
 A simple and clean weather widget that displays real-time weather data using the OpenWeatherMap API. Includes shortcode support, API key settings page, caching, and automatic icons.
 
 == Description ==
