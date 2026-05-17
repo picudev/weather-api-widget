@@ -1,59 +1,42 @@
-A simple and clean weather widget that displays real-time weather data using the OpenWeatherMap API. Includes shortcode support, API key settings page, caching, and automatic icons.
+# Weather API Widget
 
-== Description ==
+![License](https://img.shields.io/badge/license-GPLv2-blue.svg)
+![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-blue)
+![PHP](https://img.shields.io/badge/PHP-7.4%2B-green)
+![Status](https://img.shields.io/badge/status-stable-success)
 
-Weather API Widget allows you to display current weather information anywhere on your WordPress site using a shortcode.  
-It connects to the OpenWeatherMap API and shows temperature, conditions, humidity, wind speed, and weather icons.
+A lightweight WordPress plugin that displays real-time weather information using the OpenWeatherMap API.  
+Includes shortcode support, caching, automatic icons, and a clean UI.
 
-Features:
-* Shortcode: [weather city="Bucharest"]
-* Supports metric and imperial units
-* API key settings page in WordPress admin
-* Built-in caching (30 minutes)
-* Automatic weather icons
-* Clean inline styling (no external CSS files)
-* Error handling for missing API key or API failures
+---
 
-== Installation ==
+## Features
 
-1. Upload the plugin folder to `/wp-content/plugins/`
-2. Activate the plugin from **Plugins → Installed Plugins**
-3. Go to **Settings → Weather API**
-4. Enter your OpenWeatherMap API key
-5. Use the shortcode anywhere on your site
+- Shortcode: `[weather city="Bucharest"]`
+- Supports metric and imperial units
+- Admin settings page for API key
+- 30‑minute caching to reduce API calls
+- Automatic weather icons
+- Inline CSS (no external files)
+- Error handling for API failures
 
-== Shortcode Usage ==
+---
 
-Basic example:
-Parameters:
-* `city` — City name (default: Bucharest)
-* `units` — metric or imperial (default: metric)
+## Installation
 
-== Frequently Asked Questions ==
+1. Download or clone this repository.
+2. Upload the folder to `wp-content/plugins/`.
+3. Activate the plugin from **Plugins → Installed Plugins**.
+4. Go to **Settings → Weather API** and enter your OpenWeatherMap API key.
 
-= Where do I get an API key? =
-You can create a free API key at https://openweathermap.org/api
+---
 
-= How often is the weather updated? =
-The plugin caches results for 30 minutes to improve performance.
+## Shortcode Usage
 
-= Does it support widgets or Gutenberg blocks? =
-Currently shortcode-only, but widget/block support may be added in future versions.
+### Basic
+```php
+[weather city="Bucharest"]
 
-== Screenshots ==
-
-1. Example of the weather widget displayed on the site.
-
-== Changelog ==
-
-= 1.1.0 =
-* Added caching
-* Added weather icons
-* Improved error handling
-* Cleaned up shortcode logic
-
-= 1.0.0 =
-* Initial release
 
 == License ==
 
